@@ -60,6 +60,7 @@ body nav ul li {
     font-family: 'Century Gothic', 'Futura', Arial, serif;
     padding: 10px 20px;
     font-style: normal;
+    font-size: 18px;
 }
 
 body nav ul li a {
@@ -364,9 +365,9 @@ footer{
 
 footer p.thanks{
     color: #F8E16C;
-    line-height: .5;
+    line-height: 1.5;
     margin-left: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-family: 'Century Gothic', 'Futura', Arial, serif;
 }
 
@@ -431,7 +432,7 @@ div h2 {
 }
 
 div img {
-    border: 8px dotted #00C49A;
+    border: 8px solid #00C49A;
     width: 80%;
     border-radius: 50%;
     padding: 10px;
@@ -452,7 +453,7 @@ div.lit-hist {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 50px;
+    margin: 20px;
     padding: 10px 10px;
     background-color: #FFF;
     border-radius: 50px;
@@ -482,14 +483,15 @@ div.lit-hist img {
     display: flex;
     flex-direction: column;
     align-self: center;
+    border: 3px solid #00C49A;
 }
 
 .main_img{
     position: absolute;
     border: none;
     border-radius: 0%;
-    min-width: 900vw;
-    min-height: 147vh;
+    min-width: 1000vw;
+    min-height: 220vh;
     margin: 0px;
     padding: 0px;
     z-index: 0;
@@ -538,12 +540,6 @@ div.page{
     width: 80vw;
     background-color: #F8E16C;
     border-radius: 50px;
-    height: 80px;
-    overflow: hidden;
-}
-
-.page:focus {
-    height: auto;
 }
 
 
@@ -565,6 +561,38 @@ div.page{
 
 .disclaimer{
     z-index: 3;
+}
+
+dl .letter {
+    width: 50px;
+    font-size: 40px;
+}
+
+dt {
+    font-family: 'Century Gothic', 'Futura', Arial, serif;
+    font-size: 24px;
+    margin: 10px 0px 10px 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px dotted #37423D;
+
+}
+
+dd {
+    font-family: 'Century Gothic', 'Futura', Arial, serif;
+    font-size: 20px;
+    margin-left: 40px;
+    color: #156064;
+}
+
+dd p {
+    font-family: Arial, serif;
+    font-size: 18px;
+    padding: 10px;
+    color: #37423D;
+}
+
+.alphabet li {
+    font-size: 20px;
 }
 
 }
