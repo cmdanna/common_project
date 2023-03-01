@@ -487,14 +487,12 @@ div.lit-hist img {
 }
 
 .main_img{
-    position: absolute;
-    border: none;
-    border-radius: 0%;
-    min-width: 1000vw;
-    min-height: 220vh;
-    margin: 0px;
-    padding: 0px;
-    z-index: 0;
+    display: none;
+}
+
+.index_container{
+    background-image: url(../images/women_march_pano.jpg);
+    background-size: cover;
 }
 
 .synopsis{
@@ -550,7 +548,7 @@ div.page{
     margin-top: 20px;
     text-decoration: none;
     padding: 10px;
-    width: 80vw;
+    align-self: center;
     text-align: center;
 }
 
@@ -592,7 +590,7 @@ dd p {
 }
 
 .alphabet li {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 }
