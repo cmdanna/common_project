@@ -116,7 +116,7 @@ body nav ul li a:hover {
 .index_container {
     display: flex;
     flex-direction: column;
-    background-color: #FFF;
+    background-color: #ffe5df;
 }
 
 .synopsis {
@@ -155,6 +155,7 @@ p a {
     width: 25vw;
     background-color: #F8E16C;
     border-radius: 50px;
+    box-shadow: 10px 10px #156064;
 }
 
 h2{
@@ -190,7 +191,7 @@ h2{
 
 .main_img:hover{
     animation-name: hidden_message;
-    animation-duration: 10s; 
+    animation-duration: 3s; 
     animation-delay: .1s;
 }
 
@@ -202,7 +203,7 @@ h2{
 
 /* literature-history */
 
-div:nth-child(2n) h3 {
+div:nth-child(even) h3 {
     font-size: 18px;
     padding: 20px 40px 10px;
     color: #156064;
@@ -210,7 +211,7 @@ div:nth-child(2n) h3 {
     grid-column: 2/3;
 }
 
-div:nth-child(2n+1) h3 {
+div:nth-child(odd) h3 {
     font-size: 18px;
     padding: 20px 40px 10px;
     color: #156064;
@@ -218,7 +219,7 @@ div:nth-child(2n+1) h3 {
     grid-column: 1/2;
 }
 
-div.lit-hist:nth-child(2n) p {
+div.lit-hist:nth-child(even) p {
     color: #37423D;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px 80px;
@@ -226,7 +227,7 @@ div.lit-hist:nth-child(2n) p {
     grid-column: 2/3;
 }
 
-div.lit-hist:nth-child(2n+1) p {
+div.lit-hist:nth-child(odd) p {
     color: #37423D;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px 80px;
@@ -234,12 +235,11 @@ div.lit-hist:nth-child(2n+1) p {
     grid-column: 1/2;
 }
 
-div.lit-hist:nth-child(2n) h2 {
+div.lit-hist:nth-child(even) h2 {
     font-family: 'Abril Fatface',Georgia,Arial,serif;
     padding: 15px 40px;
     font-size: 24px;
     margin: 5px;
-    text-align: left;
     color: #156064;
     font-style: italic;
     grid-column: 2/3;
@@ -248,12 +248,11 @@ div.lit-hist:nth-child(2n) h2 {
     text-align: center;
 }
 
-div.lit-hist:nth-child(2n+1) h2 {
+div.lit-hist:nth-child(odd) h2 {
     font-family: 'Abril Fatface',Georgia,Arial,serif;
     padding: 15px 40px;
     font-size: 24px;
     margin: 5px;
-    text-align: left;
     color: #156064;
     font-style: italic;
     grid-column: 1/2;
@@ -262,8 +261,8 @@ div.lit-hist:nth-child(2n+1) h2 {
     text-align: center;
 }
 
-div:nth-child(2n) img {
-    border: 8px dotted #00C49A;
+div:nth-child(even) img {
+    border: 8px dotted #156064;
     width: 80%;
     border-radius: 50%;
     padding: 10px;
@@ -273,8 +272,8 @@ div:nth-child(2n) img {
     justify-self: center;
 }
 
-div:nth-child(2n + 1) img {
-    border: 8px dotted #00C49A;
+div:nth-child(odd) img {
+    border: 8px dotted #156064;
     width: 80%;
     border-radius: 50%;
     padding: 10px;
@@ -288,7 +287,7 @@ body .terf,.racist {
     display: none;
 }
 
-div:nth-child(2n) .works {
+div:nth-child(even) .works {
     list-style: disc outside;
     line-height: 1.5;
     padding: 10px 60px;
@@ -299,7 +298,7 @@ div:nth-child(2n) .works {
     grid-column: 2/3;
 }
 
-div:nth-child(2n+1) .works {
+div:nth-child(odd) .works {
     list-style: disc outside;
     line-height: 1.5;
     padding: 10px 60px;
@@ -315,7 +314,7 @@ div.lit-hist {
     grid-template-columns: 1fr 1fr;
     margin: 50px;
     padding: 40px;
-    background-color: #FFF;
+    background-color: #ffe5df;
     border-radius: 50px;
 }
 
@@ -325,7 +324,7 @@ div.lit-hist {
     align-content: stretch;
 }
 
-div:nth-child(2n+1) .links{
+div:nth-child(odd) .links{
     grid-column: 1/2;
     font-size: 200%;
     display: flex;
@@ -334,7 +333,7 @@ div:nth-child(2n+1) .links{
     margin-bottom: 20px;
 }
 
-div:nth-child(2n) .links{
+div:nth-child(even) .links{
     grid-column: 2/3;
     font-size: 200%;
     display: flex;
@@ -460,7 +459,7 @@ dd p {
 }
 
 .femdict {
-    background-color: #FFF;
+    background-color: #ffe5df;
 }
 
 /* footer */
@@ -489,7 +488,7 @@ a.tops{
 
 a.tops:hover{
     margin: 20px;
-    border-bottom: 3px dotted #FFF;
+    border-bottom: 3px dotted #ffe5df;
     font-family: 'Century Gothic', 'Futura', Arial, serif;
     text-decoration: none;
     font-weight: bold;
@@ -566,7 +565,7 @@ div.lit-hist {
     justify-content: space-evenly;
     margin: 20px;
     padding: 10px 10px;
-    background-color: #FFF;
+    background-color: #ffd5cc;
     border-radius: 50px;
 }
 
@@ -576,12 +575,12 @@ div p {
     font-size: 18px;
 }
 
-div.lit-hist:nth-child(2n+1) p{
+div.lit-hist:nth-child(odd) p{
     padding: 10px 20px;
     margin: 0px;
 }
 
-div.lit-hist:nth-child(2n) p {
+div.lit-hist:nth-child(even) p {
     padding: 10px 20px;
     margin: 0px;
 }
@@ -648,8 +647,7 @@ div.page{
     margin: 20px;
     align-self: center;
     width: 80vw;
-    background-color: #F8E16C;
-    border-radius: 50px;
+    box-shadow: none;
 }
 
 
