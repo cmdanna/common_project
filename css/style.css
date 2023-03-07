@@ -541,13 +541,13 @@ div h2 {
     text-align: center;
 }
 
-div img {
-    border: 8px solid #00C49A;
+/* div img {
+    border: 8px solid #156064;
     width: 80%;
     border-radius: 50%;
     padding: 10px;
     margin: 20px;
-}
+} */
 
 .works {
     list-style: disc inside;
@@ -565,7 +565,7 @@ div.lit-hist {
     justify-content: space-evenly;
     margin: 20px;
     padding: 10px 10px;
-    background-color: #ffd5cc;
+    background-color: #ffe5df;
     border-radius: 50px;
 }
 
@@ -593,7 +593,7 @@ div.lit-hist img {
     display: flex;
     flex-direction: column;
     align-self: center;
-    border: 3px solid #00C49A;
+    border: 3px solid #156064;
 }
 
 .main_img{
