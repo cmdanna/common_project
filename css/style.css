@@ -607,6 +607,8 @@ div ul{
 div.lit-hist img {
     /* display: flex;
     flex-direction: column; */
+    width: 80%;
+    margin: 20px 5px;
     align-self: center;
     border: 3px solid #156064;
 }
