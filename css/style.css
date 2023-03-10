@@ -193,6 +193,7 @@ h2{
     animation-name: hidden_message;
     animation-duration: 3s; 
     animation-delay: .1s;
+    animation-fill-mode: forwards;
 }
 
 .page p{
@@ -202,6 +203,19 @@ h2{
 
 
 /* literature-history */
+
+
+div.lit-hist{
+    opacity: 50%;
+}
+
+div.lit-hist:hover{
+    opacity: 100%;
+}
+
+div.lit-hist:focus {
+    opacity: 100%;
+}
 
 div:nth-child(even) h3 {
     font-size: 18px;
@@ -268,7 +282,7 @@ div:nth-child(even) img {
     padding: 10px;
     margin: 20px;
     grid-column: 1/2;
-    grid-row: 1 / span 4;
+    grid-row: 1 / span 7;
     justify-self: center;
 }
 
@@ -279,7 +293,7 @@ div:nth-child(odd) img {
     padding: 10px;
     margin: 20px;
     grid-column: -2/-1;
-    grid-row: 1 / span 4;
+    grid-row: 1 / span 7;
     justify-self: center;
 }
 
@@ -318,11 +332,11 @@ div.lit-hist {
     border-radius: 50px;
 }
 
-.lit-hist img {
+/* .lit-hist img {
     display: flex;
     flex-direction: column;
     align-content: stretch;
-}
+} */
 
 div:nth-child(odd) .links{
     grid-column: 1/2;
@@ -563,6 +577,7 @@ div.lit-hist {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    opacity: 100%;
     margin: 20px;
     padding: 10px 10px;
     background-color: #ffe5df;
@@ -590,8 +605,8 @@ div ul{
 }
 
 div.lit-hist img {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     align-self: center;
     border: 3px solid #156064;
 }
@@ -718,6 +733,7 @@ dd p {
     to {z-index: 0;
     opacity: 30%;}
 }
+
 
 @media screen and (prefers-reduced-motion: reduce) {
     .main_img:hover,h1{
