@@ -8,7 +8,8 @@
   <!-- connects to the stylesheets -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  
+  <!--connect to javascript-->
+  <script rel="javascript--" src="js/index.js"></script>
   <!-- connect to a Google font -->  
   <link rel="stylesheet" link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Abril+Fatface">
   <!-- connect to a Font Awesome font -->
@@ -23,13 +24,26 @@
   <a href="#mainstuff" class="skip">Skip to Main Content</a>
   <header>
     <nav>
+      <div id="stretchnav">
         <ul>
           <li><a class="active index_page" href="index.html">About</a></li>
           <li><a class="lit_page" href="literature.html">Literature</a></li>
           <li><a class="hist_page" href="history.html">History and Politics</a></li>
           <li><a class="dict_page" href="femdict.html">Feminist Dictionary</a></li>
         </ul>
-    </nav>
+      </div>
+      <div id="menunav">
+        <div class="dropdown">
+          <i id="menu4" class="fa-solid fa-bars"><button class="dropbtn" onclick="dropdown()" aria-label="Menu"></button></i>
+          <div class="dropdown-content" id="myDropdown">
+            <li><a class="active index_page" href="index.html">About</a></li>
+            <li><a class="lit_page" href="literature.html">Literature</a></li>
+            <li><a class="hist_page" href="history.html">History and Politics</a></li>
+            <li><a class="dict_page" href="femdict.html">Feminist Dictionary</a></li>
+          </div>
+        </div>
+      </div>
+    </nav>   
     <h1>Woman's Web</h1>
   </header>
 
