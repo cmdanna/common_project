@@ -1474,7 +1474,7 @@ div.lit-hist:nth-child(odd) .quote {
     font-size: 18px;
     justify-content: center;
     background-color:#ffe5df;
-    padding: 120px;
+    padding: 120px 150px;
 }
 
 div.lit-hist:nth-child(even) .quote {
