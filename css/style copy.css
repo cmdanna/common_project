@@ -1,0 +1,1091 @@
+/* DESKTOP */
+
+/* header */
+
+h1 {
+    font-family: 'Abril Fatface', Georgia, Arial, serif;
+    font-weight: bold;
+    padding: 16px;
+    font-size: 300%;
+    color: #F8E16C;
+    text-align: center;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    background-color: #156064;
+    animation-name:title;
+    animation-duration: 5s;
+}
+
+.lit_page::before{
+    content: '\f02d';
+    font: var(--fa-font-solid);
+    padding: 10px;
+}
+
+.hist_page::before{
+    content: '\f0ac';
+    font: var(--fa-font-solid);
+    padding: 10px;
+}
+
+.dict_page::before{
+    content: '\f891';
+    font: var(--fa-font-solid);
+    padding: 10px;
+}
+
+.index_page::before {
+    content: '\f015';
+    font: var(--fa-font-solid);
+    padding: 10px;
+}
+
+#menunav {
+    display: none;
+}
+
+/* body */
+
+.skip {
+    position: absolute;
+    transform: translateY(-100%);
+    z-index: 1;
+}
+
+.skip:focus {
+    position: absolute;
+    transform: translateY(0%)
+}
+
+body {
+    background-color: #FFC2B4;
+    color: #37423D;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* nav */
+
+nav {
+    background-color: #156064;
+    position: sticky;
+    top: 0;
+    z-index: 0;
+}
+
+body nav ul {
+    text-align: center;
+}
+
+body nav ul li {
+    display: inline-block;
+    font-family: 'Century Gothic', 'Futura', Arial, serif;
+    padding: 10px 20px;
+    font-style: normal;
+    font-size: 18px;
+}
+
+body nav ul li a {
+    color: #FFC2B4;
+    text-decoration: none;
+}
+
+body nav ul li a.active {
+    color: #F8E16C;
+    font-weight: bold;
+}
+
+body nav ul li a:hover {
+    color: #F8E16C;
+    padding: 5px 0px;
+    border-bottom: 3px dotted #F8E16C;
+    font-family: 'Century Gothic', 'Futura', Arial, serif;
+}
+
+
+/* index */
+
+.index_container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe5df;
+}
+
+.synopsis {
+    margin: 0px 20px 30px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+div.disclaimer {
+    background-color: #FFC2B4;
+    padding: 40px;
+}
+
+div.disclaimer p {
+    color: #156064;
+    line-height: 1.5;
+}
+
+.pages{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0px 40px 30px;
+}
+
+p a {
+    color: #156064;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.page{
+    border-radius: 50px;
+    margin: 20px auto;
+    width: 25vw;
+    background-color: #F8E16C;
+    box-shadow: 10px 10px #156064;
+}
+
+h2{
+    font-family: 'Abril Fatface', Georgia, Arial, serif;
+    color: #156064;
+    font-size: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.main_img {
+    grid-area: 1/1/2/4;
+    /* border-image: url(../images/Blue.png) 40 fill / 15px / 10px stretch; */
+    border: 8px dotted #156064;
+    padding: 15px;
+    border-radius: 200px;
+    width: 90vw;
+    margin: 40px auto 0px;
+    z-index: 2;
+    opacity: 100%;
+}
+
+#reveal{
+    font-size: 200%;
+    position: relative;
+    top: -170px;
+    margin: 0px auto;
+    z-index: 0;
+    text-align: center;
+}
+
+.main_img:hover{
+    animation-name: hidden_message;
+    animation-duration: 3s; 
+    animation-delay: .1s;
+    animation-fill-mode: forwards;
+}
+
+.page p{
+    margin: 10px 40px 30px;
+    text-align: center;
+}
+
+
+/* literature-history */
+
+
+div.lit-hist{
+    opacity: 50%;
+}
+
+div.lit-hist:hover{
+    opacity: 100%;
+}
+
+div.lit-hist:focus {
+    opacity: 100%;
+}
+
+div:nth-child(even) h3 {
+    font-size: 18px;
+    padding: 20px 40px 10px;
+    color: #156064;
+    font-family: 'Century Gothic', 'Futura', Arial, serif;
+    grid-column: 2/3;
+}
+
+div:nth-child(odd) h3 {
+    font-size: 18px;
+    padding: 20px 40px 10px;
+    color: #156064;
+    font-family: 'Century Gothic', 'Futura', Arial, serif;
+    grid-column: 1/2;
+}
+
+div.lit-hist:nth-child(even) p {
+    color: #37423D;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 80px;
+    font-size: 18px;
+    grid-column: 2/3;
+}
+
+div.lit-hist:nth-child(odd) p {
+    color: #37423D;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 80px;
+    font-size: 18px;
+    grid-column: 1/2;
+}
+
+div.lit-hist:nth-child(even) h2 {
+    font-family: 'Abril Fatface',Georgia,Arial,serif;
+    padding: 15px 40px;
+    font-size: 24px;
+    margin: 5px;
+    color: #156064;
+    font-style: italic;
+    grid-column: 2/3;
+    background-color: #F8E16C;
+    border-radius: 50px;
+    text-align: center;
+}
+
+div.lit-hist:nth-child(odd) h2 {
+    font-family: 'Abril Fatface',Georgia,Arial,serif;
+    padding: 15px 40px;
+    font-size: 24px;
+    margin: 5px;
+    color: #156064;
+    font-style: italic;
+    grid-column: 1/2;
+    background-color: #F8E16C;
+    border-radius: 50px;
+    text-align: center;
+}
+
+div:nth-child(even) img {
+    border: 8px dotted #156064;
+    width: 80%;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 20px;
+    grid-column: 1/2;
+    grid-row: 1 / span 7;
+    justify-self: center;
+}
+
+div:nth-child(odd) img {
+    border: 8px dotted #156064;
+    width: 80%;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 20px;
+    grid-column: -2/-1;
+    grid-row: 1 / span 7;
+    justify-self: center;
+}
+
+body .terf,.racist {
+    display: none;
+}
+
+div:nth-child(even) .works {
+    list-style: disc outside;
+    line-height: 1.5;
+    padding: 10px 60px;
+    font-size: 18px;
+    font-family: Arial, serif;
+    font-style: italic;
+    color: #156064;
+    grid-column: 2/3;
+}
+
+div:nth-child(odd) .works {
+    list-style: disc outside;
+    line-height: 1.5;
+    padding: 10px 60px;
+    font-size: 18px;
+    font-family: Arial, serif;
+    font-style: italic;
+    color: #156064;
+    grid-column: 1/2;
+}
+
+div.lit-hist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px;
+    padding: 40px;
+    background-color: #ffe5df;
+    border-radius: 50px;
+}
+
+
+div:nth-child(odd) .links{
+    grid-column: 1/2;
+    font-size: 200%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+div:nth-child(even) .links{
+    grid-column: 2/3;
+    font-size: 200%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+div.links i{
+    color: #156064;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+div.links i:hover {
+    color: #00C49A;
+}
+
+/* femdict */
+
+p.subtitle {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 0px auto;
+    text-align: center;
+    font-style: italic;
+    color: #FFC2B4;
+    font-family: 'Century Gothic', 'Futura', Arial, serif;
+    position: static;
+    justify-content: center;
+    background-color: #156064;
+}
+
+.alphabet {
+    text-align: center;
+    margin: 20px;
+}
+
+.alphabet li {
+    display: inline;
+    list-style: none;
+    font-family: 'Century Gothic', 'Futura', Arial, serif;
+    font-size: 18px;
+    padding: 5px;
+    overflow: none;
+    color: #00C49A;
+}
+
+.alphabet a:hover {
+    font-weight: bold;
+}
+
+.alphabet a {
+    color: #156064;
+}
+
+dl {
+    margin: 20px 80px;
+}
+
+dl .letter {
+    font-family: 'Abril Fatface', Georgia, Arial, serif;
+    background-color: #156064;
+    text-align: center;
+    border-radius: 50%;
+    width: 30px;
+    padding: 4px 8px;
+    color: #FFC2B4;
+    font-size: 20px;
+    border: none;
+}
+
+dt {
+    font-family: 'Century Gothic', 'Futura', Arial, serif;
+    font-size: 18px;
+    margin: 10px 0px 10px 20px;
+    border-bottom: 3px dotted #37423D;
+
+}
+
+dd {
+    font-family: 'Century Gothic', 'Futura', Arial, serif;
+    font-size: 14px;
+    margin-left: 40px;
+    color: #156064;
+}
+
+dd p {
+    font-family: Arial, serif;
+    font-size: 16px;
+    padding: 10px;
+    color: #37423D;
+}
+
+.femdict {
+    background-color: #ffe5df;
+}
+
+/* footer */
+
+footer{
+    background-color: #156064;
+    padding: 20px;
+}
+
+footer p.thanks{
+    color: #F8E16C;
+    line-height: 1.5;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    font-family: 'Century Gothic', 'Futura', Arial, serif;
+}
+
+a.tops{
+    font-family: 'Century Gothic', 'Futura', Arial, serif;
+    font-size: 15px;
+    color: #F8E16C;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 20px;
+}
+
+a.tops:hover{
+    margin: 20px;
+    border-bottom: 3px dotted #ffe5df;
+    font-family: 'Century Gothic', 'Futura', Arial, serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* PHONE */
+@media screen and (max-width:700px){
+
+
+    
+header{
+    background-color: #156064;
+    z-index: 1;
+}
+
+#menu1{
+    margin: 20px 0px 0px 30px;
+    color: #FFC2B4;
+    font-size: 40px;
+}
+
+#menu2 {
+    margin: 20px 0px 0px 30px;
+    color: #FFC2B4;
+    font-size: 40px;
+}
+
+#menu3 {
+    margin: 20px 0px 0px 30px;
+    color: #FFC2B4;
+    font-size: 40px;
+}
+
+#menu4 {
+    margin: 20px 0px 0px 30px;
+    color: #FFC2B4;
+    font-size: 40px;
+}
+
+nav{
+    z-index: 1;
+}
+
+h1{
+    z-index: 0;
+}
+
+body {
+    z-index: 0;
+}
+
+#stretchnav {
+    display: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#menunav {
+    display: inline;
+    list-style: none;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-family: 'Century Gothic', 'Futura', Arial, serif;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #FFC2B4;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffe5df;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px #37423D;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #156064;
+    padding: 6px 16px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+}
+
+.dropdown-content a.active{
+    text-decoration: underline;
+}
+
+.dropdown-content a:hover {
+    background-color: #FFC2B4;
+}
+
+.show {
+    display: block;
+}
+
+.main_img {
+    z-index: 0;
+}
+
+body nav ul li{
+    display: flex;
+    flex-direction: column;
+}
+
+body nav ul li a:hover {
+    color: #F8E16C;
+    font-family: 'Century Gothic', 'Futura', Arial, serif;
+    text-decoration: 3px underline dotted;
+    border: none;
+    text-underline-offset: 5px;
+}
+
+#reveal{
+    display: none;
+}
+
+div h3 {
+    font-size: 18px;
+    padding: 20px 40px 10px;
+    color: #156064;
+    font-family: 'Century Gothic', 'Futura', Arial, serif;
+}
+
+div h2 {
+    font-family: 'Abril Fatface', Georgia, Arial, serif;
+    padding: 15px 40px;
+    font-size: 24px;
+    margin: 5px;
+    text-align: left;
+    color: #156064;
+    font-style: italic;
+    grid-column: 2/3;
+    background-color: #F8E16C;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.works {
+    list-style: disc inside;
+    line-height: 1.5;
+    padding: 10px 60px;
+    font-size: 18px;
+    font-family: Arial, serif;
+    font-style: italic;
+    color: #156064;
+}
+
+div.lit-hist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    opacity: 100%;
+    margin: 20px;
+    padding: 10px 10px;
+    background-color: #ffe5df;
+    border-radius: 50px;
+}
+
+div p {
+    color: #37423D;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+div.lit-hist:nth-child(odd) p{
+    padding: 10px 20px;
+    margin: 0px;
+}
+
+div.lit-hist:nth-child(even) p {
+    padding: 10px 20px;
+    margin: 0px;
+}
+
+div ul{
+    margin-bottom: 20px;
+}
+
+div.lit-hist img {
+    /* display: flex;
+    flex-direction: column; */
+    width: 80%;
+    margin: 20px 5px;
+    align-self: center;
+    border: 3px solid #156064;
+}
+
+.main_img{
+    display: none;
+}
+
+.index_container{
+    background-image: url(../images/women_march_pano.jpg);
+    background-size: cover;
+}
+
+.synopsis{
+    z-index: 1;
+    background-color: #FFC2B4;
+    border-radius: 50px;
+    padding: 20px;
+    width: 80vw;
+    margin-top: 40px;
+    align-self: center;
+}
+
+dl {
+    margin: 20px;
+}
+
+dt {
+    margin: 10px 20px 10px 20px;
+}
+
+.femdict h1{
+    padding-bottom: 20px;
+}
+
+div.page{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+.pages {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    z-index: 2;
+}
+
+.page {
+    border-radius: 50px;
+    margin: 20px;
+    align-self: center;
+    width: 80vw;
+    box-shadow: none;
+}
+
+.page h2{
+    font-family: 'Abril Fatface', Georgia, Arial, serif;
+    color: #156064;
+    font-size: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 10px;
+    align-self: center;
+    text-align: center;
+}
+
+.page p {
+    margin: 10px 40px 30px;
+    text-align: center;
+}
+
+.disclaimer{
+    z-index: 3;
+}
+
+dl .letter {
+    width: 50px;
+    font-size: 40px;
+}
+
+dt {
+    font-family: 'Century Gothic', 'Futura', Arial, serif;
+    font-size: 24px;
+    margin: 10px 0px 10px 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px dotted #37423D;
+
+}
+
+dd {
+    font-family: 'Century Gothic', 'Futura', Arial, serif;
+    font-size: 20px;
+    margin-left: 40px;
+    color: #156064;
+}
+
+dd p {
+    font-family: Arial, serif;
+    font-size: 18px;
+    padding: 10px;
+    color: #37423D;
+}
+
+.alphabet li {
+    font-size: 18px;
+}
+}
+
+/* TABLET - Portrait and Landscape */
+@media screen and (min-device-width: 834px) and (max-device-width: 1250px) {
+/* Dropdown menu */
+
+header{
+    z-index: 1;
+}
+
+body{
+    z-index: 0;
+}
+
+#stretchnav {
+    display: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#menunav {
+    display: inline;
+    list-style: none;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-family: 'Century Gothic', 'Futura', Arial, serif;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #FFC2B4;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffe5df;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px #37423D;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #156064;
+    padding: 6px 16px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #FFC2B4;
+}
+
+.dropdown-content a.active {
+    text-decoration: underline;
+}
+
+h1{
+    z-index: -1;
+}
+
+.main_img{
+    z-index: 0;
+}
+
+#menu1 {
+    margin: 20px 0px 0px 30px;
+    color: #FFC2B4;
+    font-size: 40px;
+}
+
+#menu2 {
+    margin: 20px 0px 0px 30px;
+    color: #FFC2B4;
+    font-size: 40px;
+}
+
+#menu3 {
+    margin: 20px 0px 0px 30px;
+    color: #FFC2B4;
+    font-size: 40px;
+}
+
+#menu4 {
+    margin: 20px 0px 0px 30px;
+    color: #FFC2B4;
+    font-size: 40px;
+}
+
+div.lit-hist{
+    opacity: 100%;
+}
+
+#reveal{
+    color: #156064;
+}
+
+.main_img{
+    opacity: 50%;
+}
+
+.show {
+    display: block;
+}
+
+}
+
+/* TABLET - Portrait */
+@media screen and (min-device-width: 800px) and (max-device-width: 850px) and (orientation: portrait) {
+
+header {
+    z-index: 1;
+}
+
+body {
+    z-index: 0;
+}
+
+#stretchnav {
+    display: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#menunav {
+    display: inline;
+    list-style: none;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-family: 'Century Gothic', 'Futura', Arial, serif;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #FFC2B4;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffe5df;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px #37423D;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #156064;
+    padding: 6px 16px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #FFC2B4;
+}
+
+.dropdown-content a.active {
+    text-decoration: underline;
+}
+
+h1 {
+    z-index: -1;
+}
+
+.main_img {
+    z-index: 0;
+}
+
+#menu1 {
+    margin: 20px 0px 0px 30px;
+    color: #FFC2B4;
+    font-size: 40px;
+}
+
+#menu2 {
+    margin: 20px 0px 0px 30px;
+    color: #FFC2B4;
+    font-size: 40px;
+}
+
+#menu3 {
+    margin: 20px 0px 0px 30px;
+    color: #FFC2B4;
+    font-size: 40px;
+}
+
+#menu4 {
+    margin: 20px 0px 0px 30px;
+    color: #FFC2B4;
+    font-size: 40px;
+}
+
+#reveal{
+    display: none;
+}
+
+.synopsis{
+    margin-top: 20px;
+}
+
+.show {
+    display: block;
+}
+
+.pages{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page p {
+    padding: 5px;
+}
+
+.page{
+    width: 40vw;
+    align-content: center;
+    box-sizing: border-box;
+    box-shadow: inset;
+}
+
+div.lit-hist{
+    opacity: 100%;
+}
+
+div.lit-hist:nth-child(odd) img {
+    grid-area: 1/2/2/3;
+}
+
+div.lit-hist:nth-child(odd) h2 {
+    font-size: 50px;
+    align-self: center;
+    background-color: #ffe5df;
+}
+
+div.lit-hist:nth-child(odd) p {
+    grid-column: 1/3;
+}
+
+div.lit-hist:nth-child(odd) .works {
+    grid-column: 1/3;
+}
+
+div.lit-hist:nth-child(even) img {
+    grid-area: 1/1/2/2;
+}
+
+div.lit-hist:nth-child(even) h2 {
+    font-size: 50px;
+    align-self: center;
+    grid-area: 1/2/2/3;
+    background-color: #ffe5df;
+}
+
+div.lit-hist:nth-child(even) h3 {
+    grid-column: 1/2;
+}
+
+div.lit-hist:nth-child(even) p {
+    grid-column: 1/3;
+}
+
+div.lit-hist:nth-child(even) .works {
+    grid-column: 1/3;
+}
+
+div.lit-hist:nth-child(even) .links {
+    grid-column: 1/3;
+}
+
+
+
+}
+
+
+/* ANIMATIONS */
+@keyframes title {
+    from {
+        color: #FFC2B4;
+        font-size: 400%;
+    }
+
+    to {
+        color: #F8E16C;
+        font-size: 300%;
+    }
+}
+
+@keyframes hidden_message {
+    from {
+        z-index: 2;
+        opacity: 100%;
+    }
+
+    to {
+        z-index: 0;
+        opacity: 30%;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+
+    .main_img:hover,
+    h1 {
+        animation-name: initial;
+    }
+}
